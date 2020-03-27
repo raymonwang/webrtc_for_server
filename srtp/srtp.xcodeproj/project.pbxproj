@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43805E9721187CAD00D1A557 /* srtp.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E8321187CA500D1A557 /* srtp.c */; };
+		43805E9821187E1D00D1A557 /* ekt.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E8221187CA500D1A557 /* ekt.c */; };
+		43D50D7D211C74A700CC59BB /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6F21187CA500D1A557 /* alloc.c */; };
+		43D50D7E211C74A700CC59BB /* crypto_kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E7021187CA500D1A557 /* crypto_kernel.c */; };
+		43D50D7F211C74A700CC59BB /* err.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E7121187CA500D1A557 /* err.c */; };
+		43D50D80211C74A700CC59BB /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E7221187CA500D1A557 /* key.c */; };
+		43D50D81211C74AD00CC59BB /* rdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6B21187CA500D1A557 /* rdb.c */; };
+		43D50D82211C74AD00CC59BB /* rdbx.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6C21187CA500D1A557 /* rdbx.c */; };
+		43D50D83211C74B200CC59BB /* datatypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6821187CA500D1A557 /* datatypes.c */; };
+		43D50D84211C74B200CC59BB /* stat.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6921187CA500D1A557 /* stat.c */; };
+		43D50D85211C74BB00CC59BB /* aes_icm_ossl.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6321187CA500D1A557 /* aes_icm_ossl.c */; };
+		43D50D86211C74BB00CC59BB /* null_cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6421187CA500D1A557 /* null_cipher.c */; };
+		43D50D87211C74BB00CC59BB /* aes_gcm_ossl.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6521187CA500D1A557 /* aes_gcm_ossl.c */; };
+		43D50D88211C74BB00CC59BB /* cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E6621187CA500D1A557 /* cipher.c */; };
+		43D50D89211C74C000CC59BB /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E4C21187CA500D1A557 /* auth.c */; };
+		43D50D8A211C74C000CC59BB /* null_auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E4D21187CA500D1A557 /* null_auth.c */; };
+		43D50D8B211C74C000CC59BB /* hmac_ossl.c in Sources */ = {isa = PBXBuildFile; fileRef = 43805E4E21187CA500D1A557 /* hmac_ossl.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43805E4021187CA500D1A557 /* BUILD.gn */ = {isa = PBXFileReference; lastKnownFileType = text; path = BUILD.gn; sourceTree = "<group>"; };
+		43805E4121187CA500D1A557 /* CHANGES */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		43805E4221187CA500D1A557 /* codereview.settings */ = {isa = PBXFileReference; lastKnownFileType = text; path = codereview.settings; sourceTree = "<group>"; };
+		43805E4421187CA500D1A557 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		43805E4721187CA500D1A557 /* auth_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = auth_driver.c; sourceTree = "<group>"; };
+		43805E4821187CA500D1A557 /* datatypes_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = datatypes_driver.c; sourceTree = "<group>"; };
+		43805E4921187CA500D1A557 /* kernel_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kernel_driver.c; sourceTree = "<group>"; };
+		43805E4A21187CA500D1A557 /* cipher_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cipher_driver.c; sourceTree = "<group>"; };
+		43805E4C21187CA500D1A557 /* auth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = auth.c; sourceTree = "<group>"; };
+		43805E4D21187CA500D1A557 /* null_auth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_auth.c; sourceTree = "<group>"; };
+		43805E4E21187CA500D1A557 /* hmac_ossl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hmac_ossl.c; sourceTree = "<group>"; };
+		43805E5021187CA500D1A557 /* err.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		43805E5121187CA500D1A557 /* null_cipher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = null_cipher.h; sourceTree = "<group>"; };
+		43805E5221187CA500D1A557 /* aes_icm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes_icm.h; sourceTree = "<group>"; };
+		43805E5321187CA500D1A557 /* aes_gcm_ossl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes_gcm_ossl.h; sourceTree = "<group>"; };
+		43805E5421187CA500D1A557 /* rdbx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rdbx.h; sourceTree = "<group>"; };
+		43805E5521187CA500D1A557 /* key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		43805E5621187CA500D1A557 /* stat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stat.h; sourceTree = "<group>"; };
+		43805E5721187CA500D1A557 /* cipher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cipher.h; sourceTree = "<group>"; };
+		43805E5821187CA500D1A557 /* datatypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = datatypes.h; sourceTree = "<group>"; };
+		43805E5921187CA500D1A557 /* crypto_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_types.h; sourceTree = "<group>"; };
+		43805E5A21187CA500D1A557 /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		43805E5B21187CA500D1A557 /* auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = auth.h; sourceTree = "<group>"; };
+		43805E5C21187CA500D1A557 /* integers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = integers.h; sourceTree = "<group>"; };
+		43805E5D21187CA500D1A557 /* null_auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = null_auth.h; sourceTree = "<group>"; };
+		43805E5E21187CA500D1A557 /* crypto_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_kernel.h; sourceTree = "<group>"; };
+		43805E5F21187CA500D1A557 /* alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alloc.h; sourceTree = "<group>"; };
+		43805E6021187CA500D1A557 /* rdb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rdb.h; sourceTree = "<group>"; };
+		43805E6121187CA500D1A557 /* aes_icm_ossl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes_icm_ossl.h; sourceTree = "<group>"; };
+		43805E6321187CA500D1A557 /* aes_icm_ossl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aes_icm_ossl.c; sourceTree = "<group>"; };
+		43805E6421187CA500D1A557 /* null_cipher.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_cipher.c; sourceTree = "<group>"; };
+		43805E6521187CA500D1A557 /* aes_gcm_ossl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aes_gcm_ossl.c; sourceTree = "<group>"; };
+		43805E6621187CA500D1A557 /* cipher.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cipher.c; sourceTree = "<group>"; };
+		43805E6821187CA500D1A557 /* datatypes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = datatypes.c; sourceTree = "<group>"; };
+		43805E6921187CA500D1A557 /* stat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stat.c; sourceTree = "<group>"; };
+		43805E6B21187CA500D1A557 /* rdb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rdb.c; sourceTree = "<group>"; };
+		43805E6C21187CA500D1A557 /* rdbx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rdbx.c; sourceTree = "<group>"; };
+		43805E6D21187CA500D1A557 /* ut_sim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ut_sim.c; sourceTree = "<group>"; };
+		43805E6F21187CA500D1A557 /* alloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		43805E7021187CA500D1A557 /* crypto_kernel.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = crypto_kernel.c; sourceTree = "<group>"; };
+		43805E7121187CA500D1A557 /* err.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = err.c; sourceTree = "<group>"; };
+		43805E7221187CA500D1A557 /* key.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+		43805E7421187CA500D1A557 /* rtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rtp.h; sourceTree = "<group>"; };
+		43805E7521187CA500D1A557 /* rtp_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rtp_priv.h; sourceTree = "<group>"; };
+		43805E7621187CA500D1A557 /* ut_sim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ut_sim.h; sourceTree = "<group>"; };
+		43805E7721187CA500D1A557 /* ekt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ekt.h; sourceTree = "<group>"; };
+		43805E7821187CA500D1A557 /* getopt_s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getopt_s.h; sourceTree = "<group>"; };
+		43805E7921187CA500D1A557 /* srtp_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srtp_priv.h; sourceTree = "<group>"; };
+		43805E7A21187CA500D1A557 /* srtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		43805E7B21187CA500D1A557 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		43805E7C21187CA500D1A557 /* OWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = OWNERS; sourceTree = "<group>"; };
+		43805E7D21187CA500D1A557 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		43805E7E21187CA500D1A557 /* README.chromium */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.chromium; sourceTree = "<group>"; };
+		43805E7F21187CA500D1A557 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		43805E8021187CA500D1A557 /* run_all_tests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_all_tests.sh; sourceTree = "<group>"; };
+		43805E8221187CA500D1A557 /* ekt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ekt.c; sourceTree = "<group>"; };
+		43805E8321187CA500D1A557 /* srtp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = srtp.c; sourceTree = "<group>"; };
+		43805E8521187CA500D1A557 /* test_srtp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_srtp.c; sourceTree = "<group>"; };
+		43805E8621187CA500D1A557 /* rtpw.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rtpw.c; sourceTree = "<group>"; };
+		43805E8721187CA500D1A557 /* util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		43805E8821187CA500D1A557 /* rtpw_test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = rtpw_test.sh; sourceTree = "<group>"; };
+		43805E8921187CA500D1A557 /* rtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rtp.h; sourceTree = "<group>"; };
+		43805E8A21187CA500D1A557 /* rdbx_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rdbx_driver.c; sourceTree = "<group>"; };
+		43805E8B21187CA500D1A557 /* dtls_srtp_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dtls_srtp_driver.c; sourceTree = "<group>"; };
+		43805E8C21187CA500D1A557 /* getopt_s.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getopt_s.c; sourceTree = "<group>"; };
+		43805E8D21187CA500D1A557 /* cutest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cutest.h; sourceTree = "<group>"; };
+		43805E8E21187CA500D1A557 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		43805E8F21187CA500D1A557 /* srtp_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = srtp_driver.c; sourceTree = "<group>"; };
+		43805E9021187CA500D1A557 /* words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		43805E9121187CA500D1A557 /* rtp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rtp.c; sourceTree = "<group>"; };
+		43805E9221187CA500D1A557 /* rtpw_test_gcm.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = rtpw_test_gcm.sh; sourceTree = "<group>"; };
+		43805E9321187CA500D1A557 /* roc_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = roc_driver.c; sourceTree = "<group>"; };
+		43805E9421187CA500D1A557 /* replay_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = replay_driver.c; sourceTree = "<group>"; };
+		43805E9521187CA500D1A557 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		43805E9621187CA500D1A557 /* VERSION */ = {isa = PBXFileReference; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		439831A1198F760B0090EABA /* libsrtp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsrtp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4398319E198F760B0090EABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43805E4321187CA500D1A557 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				43805E4421187CA500D1A557 /* config.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		43805E4521187CA500D1A557 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				43805E4621187CA500D1A557 /* test */,
+				43805E4B21187CA500D1A557 /* hash */,
+				43805E4F21187CA500D1A557 /* include */,
+				43805E6221187CA500D1A557 /* cipher */,
+				43805E6721187CA500D1A557 /* math */,
+				43805E6A21187CA500D1A557 /* replay */,
+				43805E6E21187CA500D1A557 /* kernel */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		43805E4621187CA500D1A557 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				43805E4721187CA500D1A557 /* auth_driver.c */,
+				43805E4821187CA500D1A557 /* datatypes_driver.c */,
+				43805E4921187CA500D1A557 /* kernel_driver.c */,
+				43805E4A21187CA500D1A557 /* cipher_driver.c */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		43805E4B21187CA500D1A557 /* hash */ = {
+			isa = PBXGroup;
+			children = (
+				43805E4C21187CA500D1A557 /* auth.c */,
+				43805E4D21187CA500D1A557 /* null_auth.c */,
+				43805E4E21187CA500D1A557 /* hmac_ossl.c */,
+			);
+			path = hash;
+			sourceTree = "<group>";
+		};
+		43805E4F21187CA500D1A557 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				43805E5021187CA500D1A557 /* err.h */,
+				43805E5121187CA500D1A557 /* null_cipher.h */,
+				43805E5221187CA500D1A557 /* aes_icm.h */,
+				43805E5321187CA500D1A557 /* aes_gcm_ossl.h */,
+				43805E5421187CA500D1A557 /* rdbx.h */,
+				43805E5521187CA500D1A557 /* key.h */,
+				43805E5621187CA500D1A557 /* stat.h */,
+				43805E5721187CA500D1A557 /* cipher.h */,
+				43805E5821187CA500D1A557 /* datatypes.h */,
+				43805E5921187CA500D1A557 /* crypto_types.h */,
+				43805E5A21187CA500D1A557 /* aes.h */,
+				43805E5B21187CA500D1A557 /* auth.h */,
+				43805E5C21187CA500D1A557 /* integers.h */,
+				43805E5D21187CA500D1A557 /* null_auth.h */,
+				43805E5E21187CA500D1A557 /* crypto_kernel.h */,
+				43805E5F21187CA500D1A557 /* alloc.h */,
+				43805E6021187CA500D1A557 /* rdb.h */,
+				43805E6121187CA500D1A557 /* aes_icm_ossl.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		43805E6221187CA500D1A557 /* cipher */ = {
+			isa = PBXGroup;
+			children = (
+				43805E6321187CA500D1A557 /* aes_icm_ossl.c */,
+				43805E6421187CA500D1A557 /* null_cipher.c */,
+				43805E6521187CA500D1A557 /* aes_gcm_ossl.c */,
+				43805E6621187CA500D1A557 /* cipher.c */,
+			);
+			path = cipher;
+			sourceTree = "<group>";
+		};
+		43805E6721187CA500D1A557 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				43805E6821187CA500D1A557 /* datatypes.c */,
+				43805E6921187CA500D1A557 /* stat.c */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		43805E6A21187CA500D1A557 /* replay */ = {
+			isa = PBXGroup;
+			children = (
+				43805E6B21187CA500D1A557 /* rdb.c */,
+				43805E6C21187CA500D1A557 /* rdbx.c */,
+				43805E6D21187CA500D1A557 /* ut_sim.c */,
+			);
+			path = replay;
+			sourceTree = "<group>";
+		};
+		43805E6E21187CA500D1A557 /* kernel */ = {
+			isa = PBXGroup;
+			children = (
+				43805E6F21187CA500D1A557 /* alloc.c */,
+				43805E7021187CA500D1A557 /* crypto_kernel.c */,
+				43805E7121187CA500D1A557 /* err.c */,
+				43805E7221187CA500D1A557 /* key.c */,
+			);
+			path = kernel;
+			sourceTree = "<group>";
+		};
+		43805E7321187CA500D1A557 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				43805E7421187CA500D1A557 /* rtp.h */,
+				43805E7521187CA500D1A557 /* rtp_priv.h */,
+				43805E7621187CA500D1A557 /* ut_sim.h */,
+				43805E7721187CA500D1A557 /* ekt.h */,
+				43805E7821187CA500D1A557 /* getopt_s.h */,
+				43805E7921187CA500D1A557 /* srtp_priv.h */,
+				43805E7A21187CA500D1A557 /* srtp.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		43805E8121187CA500D1A557 /* srtp */ = {
+			isa = PBXGroup;
+			children = (
+				43805E8221187CA500D1A557 /* ekt.c */,
+				43805E8321187CA500D1A557 /* srtp.c */,
+			);
+			path = srtp;
+			sourceTree = "<group>";
+		};
+		43805E8421187CA500D1A557 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				43805E8521187CA500D1A557 /* test_srtp.c */,
+				43805E8621187CA500D1A557 /* rtpw.c */,
+				43805E8721187CA500D1A557 /* util.c */,
+				43805E8821187CA500D1A557 /* rtpw_test.sh */,
+				43805E8921187CA500D1A557 /* rtp.h */,
+				43805E8A21187CA500D1A557 /* rdbx_driver.c */,
+				43805E8B21187CA500D1A557 /* dtls_srtp_driver.c */,
+				43805E8C21187CA500D1A557 /* getopt_s.c */,
+				43805E8D21187CA500D1A557 /* cutest.h */,
+				43805E8E21187CA500D1A557 /* util.h */,
+				43805E8F21187CA500D1A557 /* srtp_driver.c */,
+				43805E9021187CA500D1A557 /* words.txt */,
+				43805E9121187CA500D1A557 /* rtp.c */,
+				43805E9221187CA500D1A557 /* rtpw_test_gcm.sh */,
+				43805E9321187CA500D1A557 /* roc_driver.c */,
+				43805E9421187CA500D1A557 /* replay_driver.c */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		43983198198F760B0090EABA = {
+			isa = PBXGroup;
+			children = (
+				439831AE198F76240090EABA /* libsrtp */,
+				439831A2198F760B0090EABA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		439831A2198F760B0090EABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				439831A1198F760B0090EABA /* libsrtp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		439831AE198F76240090EABA /* libsrtp */ = {
+			isa = PBXGroup;
+			children = (
+				43805E4021187CA500D1A557 /* BUILD.gn */,
+				43805E4121187CA500D1A557 /* CHANGES */,
+				43805E4221187CA500D1A557 /* codereview.settings */,
+				43805E4321187CA500D1A557 /* config */,
+				43805E4521187CA500D1A557 /* crypto */,
+				43805E7321187CA500D1A557 /* include */,
+				43805E7B21187CA500D1A557 /* LICENSE */,
+				43805E7C21187CA500D1A557 /* OWNERS */,
+				43805E7D21187CA500D1A557 /* README */,
+				43805E7E21187CA500D1A557 /* README.chromium */,
+				43805E7F21187CA500D1A557 /* README.md */,
+				43805E8021187CA500D1A557 /* run_all_tests.sh */,
+				43805E8121187CA500D1A557 /* srtp */,
+				43805E8421187CA500D1A557 /* test */,
+				43805E9521187CA500D1A557 /* TODO */,
+				43805E9621187CA500D1A557 /* VERSION */,
+			);
+			name = libsrtp;
+			path = ../webRTCAPP/Classes/third_party/libsrtp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4398319F198F760B0090EABA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		439831A0198F760B0090EABA /* srtp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 439831A5198F760B0090EABA /* Build configuration list for PBXNativeTarget "srtp" */;
+			buildPhases = (
+				4398319D198F760B0090EABA /* Sources */,
+				4398319E198F760B0090EABA /* Frameworks */,
+				4398319F198F760B0090EABA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = srtp;
+			productName = srtp;
+			productReference = 439831A1198F760B0090EABA /* libsrtp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43983199198F760B0090EABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = yunwei;
+			};
+			buildConfigurationList = 4398319C198F760B0090EABA /* Build configuration list for PBXProject "srtp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43983198198F760B0090EABA;
+			productRefGroup = 439831A2198F760B0090EABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				439831A0198F760B0090EABA /* srtp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4398319D198F760B0090EABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D50D7F211C74A700CC59BB /* err.c in Sources */,
+				43D50D7D211C74A700CC59BB /* alloc.c in Sources */,
+				43D50D7E211C74A700CC59BB /* crypto_kernel.c in Sources */,
+				43D50D8B211C74C000CC59BB /* hmac_ossl.c in Sources */,
+				43D50D80211C74A700CC59BB /* key.c in Sources */,
+				43805E9821187E1D00D1A557 /* ekt.c in Sources */,
+				43D50D89211C74C000CC59BB /* auth.c in Sources */,
+				43D50D85211C74BB00CC59BB /* aes_icm_ossl.c in Sources */,
+				43D50D84211C74B200CC59BB /* stat.c in Sources */,
+				43D50D8A211C74C000CC59BB /* null_auth.c in Sources */,
+				43D50D86211C74BB00CC59BB /* null_cipher.c in Sources */,
+				43D50D81211C74AD00CC59BB /* rdb.c in Sources */,
+				43805E9721187CAD00D1A557 /* srtp.c in Sources */,
+				43D50D87211C74BB00CC59BB /* aes_gcm_ossl.c in Sources */,
+				43D50D83211C74B200CC59BB /* datatypes.c in Sources */,
+				43D50D88211C74BB00CC59BB /* cipher.c in Sources */,
+				43D50D82211C74AD00CC59BB /* rdbx.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		439831A3198F760B0090EABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		439831A4198F760B0090EABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		439831A6198F760B0090EABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					HAVE_CONFIG_H,
+					HAVE_STDLIB_H,
+					HAVE_STRING_H,
+					HAVE_UINT8_T,
+					HAVE_INT8_T,
+					HAVE_UINT16_T,
+					HAVE_INT16_T,
+					HAVE_UINT32_T,
+					HAVE_INT32_T,
+					HAVE_UINT64_T,
+					HAVE_STDINT_H,
+					HAVE_INTTYPES_H,
+					HAVE_NETINET_IN_H,
+					HAVE_ARPA_INET_H,
+					HAVE_UNISTD_H,
+					CPU_CISC,
+					OPENSSL,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../webRTCAPP/Classes/third_party/boringssl/src/include",
+					"$(SRCROOT)/../webRTCAPP/Classes/third_party/libsrtp/config",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		439831A7198F760B0090EABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					HAVE_CONFIG_H,
+					HAVE_STDLIB_H,
+					HAVE_STRING_H,
+					HAVE_UINT8_T,
+					HAVE_INT8_T,
+					HAVE_UINT16_T,
+					HAVE_INT16_T,
+					HAVE_UINT32_T,
+					HAVE_INT32_T,
+					HAVE_UINT64_T,
+					HAVE_STDINT_H,
+					HAVE_INTTYPES_H,
+					HAVE_NETINET_IN_H,
+					HAVE_ARPA_INET_H,
+					HAVE_UNISTD_H,
+					CPU_CISC,
+					OPENSSL,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../webRTCAPP/Classes/third_party/boringssl/src/include",
+					"$(SRCROOT)/../webRTCAPP/Classes/third_party/libsrtp/config",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4398319C198F760B0090EABA /* Build configuration list for PBXProject "srtp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439831A3198F760B0090EABA /* Debug */,
+				439831A4198F760B0090EABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		439831A5198F760B0090EABA /* Build configuration list for PBXNativeTarget "srtp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439831A6198F760B0090EABA /* Debug */,
+				439831A7198F760B0090EABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43983199198F760B0090EABA /* Project object */;
+}

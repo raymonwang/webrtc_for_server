@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		434120531D4F31C5003D3A39 /* remote_bitrate_estimator_abs_send_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 434120491D4F31C5003D3A39 /* remote_bitrate_estimator_abs_send_time.h */; };
+		434120551D4F31C5003D3A39 /* remote_bitrate_estimator_single_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4341204A1D4F31C5003D3A39 /* remote_bitrate_estimator_single_stream.h */; };
+		434120571D4F31C5003D3A39 /* remote_estimator_proxy.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4341204B1D4F31C5003D3A39 /* remote_estimator_proxy.cc */; };
+		434120591D4F31C5003D3A39 /* remote_estimator_proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4341204C1D4F31C5003D3A39 /* remote_estimator_proxy.h */; };
+		4341205B1D4F31C5003D3A39 /* send_time_history.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4341204D1D4F31C5003D3A39 /* send_time_history.cc */; };
+		4381C0601D4716DA000656B1 /* overuse_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43C69B971D2260D500427D35 /* overuse_estimator.cc */; };
+		4381C0611D4716DA000656B1 /* remote_bitrate_estimator_abs_send_time.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43C69B991D2260D500427D35 /* remote_bitrate_estimator_abs_send_time.cc */; };
+		4381C0621D4716DA000656B1 /* inter_arrival.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43C69B931D2260D500427D35 /* inter_arrival.cc */; };
+		4381C0641D4716DA000656B1 /* remote_bitrate_estimator_single_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 439834EE198FAAFB0090EABA /* remote_bitrate_estimator_single_stream.cc */; };
+		4381C0671D4716DA000656B1 /* aimd_rate_control.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43C69B911D2260D500427D35 /* aimd_rate_control.cc */; };
+		4381C0681D4716DA000656B1 /* overuse_detector.cc in Sources */ = {isa = PBXBuildFile; fileRef = 439834E6198FAAFB0090EABA /* overuse_detector.cc */; };
+		4381C06B1D4716DA000656B1 /* remote_bitrate_estimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 439834E5198FAAFB0090EABA /* remote_bitrate_estimator.h */; };
+		4381C06C1D4716DA000656B1 /* mock_remote_bitrate_observer.h in Headers */ = {isa = PBXBuildFile; fileRef = 439834E4198FAAFB0090EABA /* mock_remote_bitrate_observer.h */; };
+		4381C06D1D4716DA000656B1 /* overuse_detector.h in Headers */ = {isa = PBXBuildFile; fileRef = 439834E7198FAAFB0090EABA /* overuse_detector.h */; };
+		4381C06F1D4716DA000656B1 /* bwe_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 439834E2198FAAFB0090EABA /* bwe_defines.h */; };
+		4381C0701D4716DA000656B1 /* overuse_estimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C69B981D2260D500427D35 /* overuse_estimator.h */; };
+		4381C0711D4716DA000656B1 /* aimd_rate_control.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C69B921D2260D500427D35 /* aimd_rate_control.h */; };
+		4381C0741D4716DA000656B1 /* inter_arrival.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C69B941D2260D500427D35 /* inter_arrival.h */; };
+		43EFD19B1E56D9AD00E3DEAD /* bwe_defines.cc in Sources */ = {isa = PBXBuildFile; fileRef = 436C68901E51655F00C03555 /* bwe_defines.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		434120491D4F31C5003D3A39 /* remote_bitrate_estimator_abs_send_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remote_bitrate_estimator_abs_send_time.h; sourceTree = "<group>"; };
+		4341204A1D4F31C5003D3A39 /* remote_bitrate_estimator_single_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remote_bitrate_estimator_single_stream.h; sourceTree = "<group>"; };
+		4341204B1D4F31C5003D3A39 /* remote_estimator_proxy.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = remote_estimator_proxy.cc; sourceTree = "<group>"; };
+		4341204C1D4F31C5003D3A39 /* remote_estimator_proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remote_estimator_proxy.h; sourceTree = "<group>"; };
+		4341204D1D4F31C5003D3A39 /* send_time_history.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = send_time_history.cc; sourceTree = "<group>"; };
+		436C688F1E5164E800C03555 /* BUILD.gn */ = {isa = PBXFileReference; lastKnownFileType = text; path = BUILD.gn; sourceTree = "<group>"; };
+		436C68901E51655F00C03555 /* bwe_defines.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bwe_defines.cc; sourceTree = "<group>"; };
+		436C68911E51655F00C03555 /* bwe_simulations.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bwe_simulations.cc; sourceTree = "<group>"; };
+		4381C0781D4716DA000656B1 /* librbe_components_osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librbe_components_osx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		439834E2198FAAFB0090EABA /* bwe_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bwe_defines.h; sourceTree = "<group>"; };
+		439834E4198FAAFB0090EABA /* mock_remote_bitrate_observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mock_remote_bitrate_observer.h; sourceTree = "<group>"; };
+		439834E5198FAAFB0090EABA /* remote_bitrate_estimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remote_bitrate_estimator.h; sourceTree = "<group>"; };
+		439834E6198FAAFB0090EABA /* overuse_detector.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = overuse_detector.cc; sourceTree = "<group>"; };
+		439834E7198FAAFB0090EABA /* overuse_detector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overuse_detector.h; sourceTree = "<group>"; };
+		439834E8198FAAFB0090EABA /* OWNERS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OWNERS; sourceTree = "<group>"; };
+		439834EE198FAAFB0090EABA /* remote_bitrate_estimator_single_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = remote_bitrate_estimator_single_stream.cc; sourceTree = "<group>"; };
+		43C69B911D2260D500427D35 /* aimd_rate_control.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aimd_rate_control.cc; sourceTree = "<group>"; };
+		43C69B921D2260D500427D35 /* aimd_rate_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aimd_rate_control.h; sourceTree = "<group>"; };
+		43C69B931D2260D500427D35 /* inter_arrival.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inter_arrival.cc; sourceTree = "<group>"; };
+		43C69B941D2260D500427D35 /* inter_arrival.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inter_arrival.h; sourceTree = "<group>"; };
+		43C69B971D2260D500427D35 /* overuse_estimator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = overuse_estimator.cc; sourceTree = "<group>"; };
+		43C69B981D2260D500427D35 /* overuse_estimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overuse_estimator.h; sourceTree = "<group>"; };
+		43C69B991D2260D500427D35 /* remote_bitrate_estimator_abs_send_time.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = remote_bitrate_estimator_abs_send_time.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4381C0691D4716DA000656B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		439834C8198FAAC60090EABA = {
+			isa = PBXGroup;
+			children = (
+				439834DE198FAAFB0090EABA /* remote_bitrate_estimator */,
+				439834D2198FAAC60090EABA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		439834D2198FAAC60090EABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4381C0781D4716DA000656B1 /* librbe_components_osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		439834DE198FAAFB0090EABA /* remote_bitrate_estimator */ = {
+			isa = PBXGroup;
+			children = (
+				436C68901E51655F00C03555 /* bwe_defines.cc */,
+				436C68911E51655F00C03555 /* bwe_simulations.cc */,
+				436C688F1E5164E800C03555 /* BUILD.gn */,
+				434120491D4F31C5003D3A39 /* remote_bitrate_estimator_abs_send_time.h */,
+				4341204A1D4F31C5003D3A39 /* remote_bitrate_estimator_single_stream.h */,
+				4341204B1D4F31C5003D3A39 /* remote_estimator_proxy.cc */,
+				4341204C1D4F31C5003D3A39 /* remote_estimator_proxy.h */,
+				4341204D1D4F31C5003D3A39 /* send_time_history.cc */,
+				43C69B911D2260D500427D35 /* aimd_rate_control.cc */,
+				43C69B921D2260D500427D35 /* aimd_rate_control.h */,
+				43C69B931D2260D500427D35 /* inter_arrival.cc */,
+				43C69B941D2260D500427D35 /* inter_arrival.h */,
+				43C69B971D2260D500427D35 /* overuse_estimator.cc */,
+				43C69B981D2260D500427D35 /* overuse_estimator.h */,
+				43C69B991D2260D500427D35 /* remote_bitrate_estimator_abs_send_time.cc */,
+				439834E1198FAAFB0090EABA /* include */,
+				439834E6198FAAFB0090EABA /* overuse_detector.cc */,
+				439834E7198FAAFB0090EABA /* overuse_detector.h */,
+				439834E8198FAAFB0090EABA /* OWNERS */,
+				439834EE198FAAFB0090EABA /* remote_bitrate_estimator_single_stream.cc */,
+			);
+			name = remote_bitrate_estimator;
+			path = ../webRTCAPP/Classes/webrtc/modules/remote_bitrate_estimator;
+			sourceTree = "<group>";
+		};
+		439834E1198FAAFB0090EABA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				439834E2198FAAFB0090EABA /* bwe_defines.h */,
+				439834E3198FAAFB0090EABA /* mock */,
+				439834E5198FAAFB0090EABA /* remote_bitrate_estimator.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		439834E3198FAAFB0090EABA /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				439834E4198FAAFB0090EABA /* mock_remote_bitrate_observer.h */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4381C06A1D4716DA000656B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4381C06B1D4716DA000656B1 /* remote_bitrate_estimator.h in Headers */,
+				434120531D4F31C5003D3A39 /* remote_bitrate_estimator_abs_send_time.h in Headers */,
+				4381C06C1D4716DA000656B1 /* mock_remote_bitrate_observer.h in Headers */,
+				4381C06D1D4716DA000656B1 /* overuse_detector.h in Headers */,
+				4381C06F1D4716DA000656B1 /* bwe_defines.h in Headers */,
+				434120591D4F31C5003D3A39 /* remote_estimator_proxy.h in Headers */,
+				4381C0701D4716DA000656B1 /* overuse_estimator.h in Headers */,
+				4381C0711D4716DA000656B1 /* aimd_rate_control.h in Headers */,
+				4381C0741D4716DA000656B1 /* inter_arrival.h in Headers */,
+				434120551D4F31C5003D3A39 /* remote_bitrate_estimator_single_stream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4381C05E1D4716DA000656B1 /* rbe_components_osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4381C0751D4716DA000656B1 /* Build configuration list for PBXNativeTarget "rbe_components_osx" */;
+			buildPhases = (
+				4381C05F1D4716DA000656B1 /* Sources */,
+				4381C0691D4716DA000656B1 /* Frameworks */,
+				4381C06A1D4716DA000656B1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rbe_components_osx;
+			productName = rbe_components;
+			productReference = 4381C0781D4716DA000656B1 /* librbe_components_osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		439834C9198FAAC60090EABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = yunwei;
+			};
+			buildConfigurationList = 439834CC198FAAC60090EABA /* Build configuration list for PBXProject "rbe_components" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 439834C8198FAAC60090EABA;
+			productRefGroup = 439834D2198FAAC60090EABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4381C05E1D4716DA000656B1 /* rbe_components_osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4381C05F1D4716DA000656B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4381C0601D4716DA000656B1 /* overuse_estimator.cc in Sources */,
+				4381C0611D4716DA000656B1 /* remote_bitrate_estimator_abs_send_time.cc in Sources */,
+				4381C0621D4716DA000656B1 /* inter_arrival.cc in Sources */,
+				4381C0641D4716DA000656B1 /* remote_bitrate_estimator_single_stream.cc in Sources */,
+				4341205B1D4F31C5003D3A39 /* send_time_history.cc in Sources */,
+				434120571D4F31C5003D3A39 /* remote_estimator_proxy.cc in Sources */,
+				4381C0671D4716DA000656B1 /* aimd_rate_control.cc in Sources */,
+				4381C0681D4716DA000656B1 /* overuse_detector.cc in Sources */,
+				43EFD19B1E56D9AD00E3DEAD /* bwe_defines.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4381C0761D4716DA000656B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					WEBRTC_POSIX,
+					WEBRTC_MAC,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../webRTCAPP/Classes",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4381C0771D4716DA000656B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					WEBRTC_POSIX,
+					WEBRTC_MAC,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../webRTCAPP/Classes",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		439834D3198FAAC60090EABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		439834D4198FAAC60090EABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4381C0751D4716DA000656B1 /* Build configuration list for PBXNativeTarget "rbe_components_osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4381C0761D4716DA000656B1 /* Debug */,
+				4381C0771D4716DA000656B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		439834CC198FAAC60090EABA /* Build configuration list for PBXProject "rbe_components" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439834D3198FAAC60090EABA /* Debug */,
+				439834D4198FAAC60090EABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 439834C9198FAAC60090EABA /* Project object */;
+}

@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43288DFE1D38E3450044E4F5 /* frame_dropper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43288DEC1D38E2FC0044E4F5 /* frame_dropper.cc */; };
+		43288DFF1D38E3450044E4F5 /* quality_scaler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43288DF21D38E2FC0044E4F5 /* quality_scaler.cc */; };
+		43288E021D38E3450044E4F5 /* frame_dropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 43288DEE1D38E2FC0044E4F5 /* frame_dropper.h */; };
+		43288E031D38E3450044E4F5 /* mock_frame_dropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 43288DF01D38E2FC0044E4F5 /* mock_frame_dropper.h */; };
+		43288E041D38E3450044E4F5 /* quality_scaler.h in Headers */ = {isa = PBXBuildFile; fileRef = 43288DF31D38E2FC0044E4F5 /* quality_scaler.h */; };
+		43884AF31E55BAF100E63E88 /* simulcast_rate_allocator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43884AF01E55BAF100E63E88 /* simulcast_rate_allocator.cc */; };
+		43884AF51E55BAF100E63E88 /* simulcast_rate_allocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 43884AF11E55BAF100E63E88 /* simulcast_rate_allocator.h */; };
+		43884AF91E55BB3200E63E88 /* default_video_bitrate_allocator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43884AF61E55BB3200E63E88 /* default_video_bitrate_allocator.cc */; };
+		43884AFB1E55BB3200E63E88 /* default_video_bitrate_allocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 43884AF71E55BB3200E63E88 /* default_video_bitrate_allocator.h */; };
+		43C036DE1D51AD2C0022DED1 /* qp_parser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43C036DB1D51AD2C0022DED1 /* qp_parser.cc */; };
+		43C036E01D51AD2C0022DED1 /* qp_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C036DC1D51AD2C0022DED1 /* qp_parser.h */; };
+		43C036E41D51AD620022DED1 /* vp8_header_parser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43C036E11D51AD620022DED1 /* vp8_header_parser.cc */; };
+		43C036E61D51AD620022DED1 /* vp8_header_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C036E21D51AD620022DED1 /* vp8_header_parser.h */; };
+		43C036ED1D51ADAA0022DED1 /* frame_dropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C036E71D51ADAA0022DED1 /* frame_dropper.h */; };
+		43C036F31D51ADAA0022DED1 /* ivf_file_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43C036EA1D51ADAA0022DED1 /* ivf_file_writer.cc */; };
+		43C036F51D51ADAA0022DED1 /* ivf_file_writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C036EB1D51ADAA0022DED1 /* ivf_file_writer.h */; };
+		43F4EC8F1EAE00880048C1CC /* moving_average.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43EFD2261E5AE6BB00E3DEAD /* moving_average.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43288DEC1D38E2FC0044E4F5 /* frame_dropper.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frame_dropper.cc; sourceTree = "<group>"; };
+		43288DEE1D38E2FC0044E4F5 /* frame_dropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame_dropper.h; sourceTree = "<group>"; };
+		43288DF01D38E2FC0044E4F5 /* mock_frame_dropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mock_frame_dropper.h; sourceTree = "<group>"; };
+		43288DF21D38E2FC0044E4F5 /* quality_scaler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quality_scaler.cc; sourceTree = "<group>"; };
+		43288DF31D38E2FC0044E4F5 /* quality_scaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quality_scaler.h; sourceTree = "<group>"; };
+		43288E081D38E3450044E4F5 /* libvideo_coding_utility_osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libvideo_coding_utility_osx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43884AF01E55BAF100E63E88 /* simulcast_rate_allocator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simulcast_rate_allocator.cc; sourceTree = "<group>"; };
+		43884AF11E55BAF100E63E88 /* simulcast_rate_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simulcast_rate_allocator.h; sourceTree = "<group>"; };
+		43884AF61E55BB3200E63E88 /* default_video_bitrate_allocator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = default_video_bitrate_allocator.cc; sourceTree = "<group>"; };
+		43884AF71E55BB3200E63E88 /* default_video_bitrate_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = default_video_bitrate_allocator.h; sourceTree = "<group>"; };
+		43C036DB1D51AD2C0022DED1 /* qp_parser.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qp_parser.cc; sourceTree = "<group>"; };
+		43C036DC1D51AD2C0022DED1 /* qp_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qp_parser.h; sourceTree = "<group>"; };
+		43C036E11D51AD620022DED1 /* vp8_header_parser.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vp8_header_parser.cc; sourceTree = "<group>"; };
+		43C036E21D51AD620022DED1 /* vp8_header_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8_header_parser.h; sourceTree = "<group>"; };
+		43C036E71D51ADAA0022DED1 /* frame_dropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame_dropper.h; sourceTree = "<group>"; };
+		43C036EA1D51ADAA0022DED1 /* ivf_file_writer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ivf_file_writer.cc; sourceTree = "<group>"; };
+		43C036EB1D51ADAA0022DED1 /* ivf_file_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ivf_file_writer.h; sourceTree = "<group>"; };
+		43EFD2261E5AE6BB00E3DEAD /* moving_average.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moving_average.cc; sourceTree = "<group>"; };
+		43EFD2271E5AE6BB00E3DEAD /* moving_average.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = moving_average.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43288E001D38E3450044E4F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43288DD51D38E2D20044E4F5 = {
+			isa = PBXGroup;
+			children = (
+				43288DEB1D38E2FC0044E4F5 /* utility */,
+				43288DDF1D38E2D20044E4F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43288DDF1D38E2D20044E4F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43288E081D38E3450044E4F5 /* libvideo_coding_utility_osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43288DEB1D38E2FC0044E4F5 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				43C036E71D51ADAA0022DED1 /* frame_dropper.h */,
+				43C036EA1D51ADAA0022DED1 /* ivf_file_writer.cc */,
+				43C036EB1D51ADAA0022DED1 /* ivf_file_writer.h */,
+				43EFD2261E5AE6BB00E3DEAD /* moving_average.cc */,
+				43EFD2271E5AE6BB00E3DEAD /* moving_average.h */,
+				43C036E11D51AD620022DED1 /* vp8_header_parser.cc */,
+				43C036E21D51AD620022DED1 /* vp8_header_parser.h */,
+				43C036DB1D51AD2C0022DED1 /* qp_parser.cc */,
+				43C036DC1D51AD2C0022DED1 /* qp_parser.h */,
+				43288DEC1D38E2FC0044E4F5 /* frame_dropper.cc */,
+				43288DED1D38E2FC0044E4F5 /* include */,
+				43288DF21D38E2FC0044E4F5 /* quality_scaler.cc */,
+				43288DF31D38E2FC0044E4F5 /* quality_scaler.h */,
+				43884AF01E55BAF100E63E88 /* simulcast_rate_allocator.cc */,
+				43884AF11E55BAF100E63E88 /* simulcast_rate_allocator.h */,
+				43884AF61E55BB3200E63E88 /* default_video_bitrate_allocator.cc */,
+				43884AF71E55BB3200E63E88 /* default_video_bitrate_allocator.h */,
+			);
+			name = utility;
+			path = ../webRTCAPP/Classes/webrtc/modules/video_coding/utility;
+			sourceTree = "<group>";
+		};
+		43288DED1D38E2FC0044E4F5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				43288DEE1D38E2FC0044E4F5 /* frame_dropper.h */,
+				43288DEF1D38E2FC0044E4F5 /* mock */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		43288DEF1D38E2FC0044E4F5 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				43288DF01D38E2FC0044E4F5 /* mock_frame_dropper.h */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43288E011D38E3450044E4F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43884AF51E55BAF100E63E88 /* simulcast_rate_allocator.h in Headers */,
+				43288E021D38E3450044E4F5 /* frame_dropper.h in Headers */,
+				43C036ED1D51ADAA0022DED1 /* frame_dropper.h in Headers */,
+				43288E031D38E3450044E4F5 /* mock_frame_dropper.h in Headers */,
+				43C036E61D51AD620022DED1 /* vp8_header_parser.h in Headers */,
+				43884AFB1E55BB3200E63E88 /* default_video_bitrate_allocator.h in Headers */,
+				43C036E01D51AD2C0022DED1 /* qp_parser.h in Headers */,
+				43288E041D38E3450044E4F5 /* quality_scaler.h in Headers */,
+				43C036F51D51ADAA0022DED1 /* ivf_file_writer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		43288DFC1D38E3450044E4F5 /* video_coding_utility_osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43288E051D38E3450044E4F5 /* Build configuration list for PBXNativeTarget "video_coding_utility_osx" */;
+			buildPhases = (
+				43288DFD1D38E3450044E4F5 /* Sources */,
+				43288E001D38E3450044E4F5 /* Frameworks */,
+				43288E011D38E3450044E4F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = video_coding_utility_osx;
+			productName = video_coding_utility;
+			productReference = 43288E081D38E3450044E4F5 /* libvideo_coding_utility_osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43288DD61D38E2D20044E4F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wangxin;
+			};
+			buildConfigurationList = 43288DD91D38E2D20044E4F5 /* Build configuration list for PBXProject "video_coding_utility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43288DD51D38E2D20044E4F5;
+			productRefGroup = 43288DDF1D38E2D20044E4F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43288DFC1D38E3450044E4F5 /* video_coding_utility_osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43288DFD1D38E3450044E4F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C036F31D51ADAA0022DED1 /* ivf_file_writer.cc in Sources */,
+				43884AF91E55BB3200E63E88 /* default_video_bitrate_allocator.cc in Sources */,
+				43288DFE1D38E3450044E4F5 /* frame_dropper.cc in Sources */,
+				43288DFF1D38E3450044E4F5 /* quality_scaler.cc in Sources */,
+				43C036E41D51AD620022DED1 /* vp8_header_parser.cc in Sources */,
+				43C036DE1D51AD2C0022DED1 /* qp_parser.cc in Sources */,
+				43884AF31E55BAF100E63E88 /* simulcast_rate_allocator.cc in Sources */,
+				43F4EC8F1EAE00880048C1CC /* moving_average.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		43288DE01D38E2D20044E4F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		43288DE11D38E2D20044E4F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		43288E061D38E3450044E4F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					WEBRTC_POSIX,
+					WEBRTC_MAC,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../webRTCAPP/Classes";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43288E071D38E3450044E4F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					WEBRTC_POSIX,
+					WEBRTC_MAC,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../webRTCAPP/Classes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43288DD91D38E2D20044E4F5 /* Build configuration list for PBXProject "video_coding_utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43288DE01D38E2D20044E4F5 /* Debug */,
+				43288DE11D38E2D20044E4F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43288E051D38E3450044E4F5 /* Build configuration list for PBXNativeTarget "video_coding_utility_osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43288E061D38E3450044E4F5 /* Debug */,
+				43288E071D38E3450044E4F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43288DD61D38E2D20044E4F5 /* Project object */;
+}
