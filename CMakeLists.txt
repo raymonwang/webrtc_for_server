@@ -54,7 +54,7 @@ if(APPLE)
 elseif(UNIX)
   add_definitions(-DWEBRTC_POSIX -DWEBRTC_LINUX)
 endif()
-add_definitions(-DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE -DWEBRTC_APM_DEBUG_DUMP=0 -DWEBRTC_NS_FIXED -DWEBRTC_INTELLIGIBILITY_ENHANCER=0 -DJSON_USE_EXCEPTION=0)
+add_definitions(-DWEBRTC_BUILD_LIBEVENT -DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE -DWEBRTC_APM_DEBUG_DUMP=0 -DWEBRTC_NS_FIXED -DWEBRTC_INTELLIGIBILITY_ENHANCER=0 -DJSON_USE_EXCEPTION=0)
 add_definitions(-DWEBRTC_CODEC_OPUS -DWEBRTC_CODEC_ILBC -DWEBRTC_CODEC_RED -DWEBRTC_CODEC_ISACFX)
 add_definitions(-DOPUS_BUILD -DOPUS_EXPORT= -DOPUS_FIXED_POINT -DHAVE_LRINT -DHAVE_LRINTF -DVAR_ARRAYS -DFIXED_POINT -D__OPTIMIZE__)
 
@@ -228,8 +228,13 @@ target_compile_features(audio_processing PRIVATE cxx_std_11)
 file(GLOB_RECURSE system_wrappers "${CMAKE_CURRENT_SOURCE_DIR}/webRTCAPP/Classes/webrtc/system_wrappers/*.cc")
 list(FILTER system_wrappers EXCLUDE REGEX ".*test")
 list(FILTER system_wrappers EXCLUDE REGEX ".*_win")
-list(FILTER system_wrappers EXCLUDE REGEX ".*non_darwin")
 list(FILTER system_wrappers EXCLUDE REGEX ".*logcat")
+list(FILTER system_wrappers EXCLUDE REGEX ".*darwin")
+if(APPLE)
+  list(APPEND system_wrappers "${CMAKE_CURRENT_SOURCE_DIR}/webRTCAPP/Classes/webrtc/system_wrappers/source/atomic32_darwin.cc")
+elseif(UNIX)
+  list(APPEND system_wrappers "${CMAKE_CURRENT_SOURCE_DIR}/webRTCAPP/Classes/webrtc/system_wrappers/source/atomic32_non_darwin_unix.cc")
+endif()
 
 add_library(system_wrappers STATIC ${system_wrappers})
 
@@ -262,6 +267,9 @@ file(GLOB_RECURSE common_video "${CMAKE_CURRENT_SOURCE_DIR}/webRTCAPP/Classes/we
 list(FILTER common_video EXCLUDE REGEX ".*test")
 list(FILTER common_video EXCLUDE REGEX ".*win")
 list(FILTER common_video EXCLUDE REGEX ".*neon")
+if(UNIX)
+  list(FILTER common_video EXCLUDE REGEX "corevideo_frame_buffer.cc")
+endif()
 
 add_library(common_video STATIC ${common_video})
 
@@ -284,6 +292,9 @@ list(FILTER audio_device EXCLUDE REGEX ".*alsa")
 list(FILTER audio_device EXCLUDE REGEX ".*pulse")
 list(FILTER audio_device EXCLUDE REGEX ".*latebinding")
 list(FILTER audio_device EXCLUDE REGEX "audio_device_factory.cc")
+if(UNIX)
+  list(FILTER audio_device EXCLUDE REGEX ".*mac")
+endif()
 
 add_library(audio_device STATIC ${audio_device})
 
